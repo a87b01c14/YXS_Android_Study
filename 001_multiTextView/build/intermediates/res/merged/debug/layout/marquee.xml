@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/marquee_default"/>
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="1"
+        android:singleLine="true"
+        android:text="@string/marquee_once"/>
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/marquee_forever"/>
+
+    <com.antex.textview.AlwaysMarqueeTextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:text="@string/marquee_forever"/>
+
+</LinearLayout>
+<!-- From: file:/Applications/android/AndroidStudioProjects/YXS_Android_Study/001_multiTextView/src/main/res/layout/marquee.xml -->

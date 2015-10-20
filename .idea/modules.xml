@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/001_multiTextView/001_multiTextView.iml" filepath="$PROJECT_DIR$/001_multiTextView/001_multiTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YXS_Android_Study.iml" filepath="$PROJECT_DIR$/YXS_Android_Study.iml" />
+    </modules>
+  </component>
+</project>
