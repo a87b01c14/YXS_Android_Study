@@ -33,7 +33,7 @@
         android:ellipsize="marquee"
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
-        android:textSize="20sp"
-        android:text="@string/marquee_forever"/>
+        android:text="@string/marquee_forever"
+        android:textSize="20sp"/>
 
 </LinearLayout>
