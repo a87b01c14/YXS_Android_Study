@@ -25,7 +25,9 @@ import android.widget.Toast;
 import com.antex.R;
 
 /**
- * A placeholder fragment containing a simple view.
+ * TextView 高级应用
+ * 包含:跑马灯效果,输出日志LogTextBox,TextView中添加电话URL链接,TextView中插入图片
+ * 文字阴影效果，TextView圆角边框和渐变背景
  */
 public class MultiTextActivityFragment extends Fragment {
 
@@ -46,7 +48,7 @@ public class MultiTextActivityFragment extends Fragment {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN)
-                    mScrollView.requestDisallowInterceptTouchEvent(false);
+                    mScrollView.requestDisallowInterceptTouchEvent(false);//告诉mScrollView不要拦截触摸事件
                 else
                     mScrollView.requestDisallowInterceptTouchEvent(true);
                 return false;
@@ -97,7 +99,7 @@ public class MultiTextActivityFragment extends Fragment {
         textView2.setText(spannableString);
         textView2.setMovementMethod(LinkMovementMethod.getInstance());
 
-        //追加照片
+        //插入照片
         textView2.append(Html.fromHtml(htmlstring, new Html.ImageGetter() {
 
             @Override
