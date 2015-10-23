@@ -10,6 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/001_Gravity" />
+            <option value="$PROJECT_DIR$/002_Layout_Gravity" />
+            <option value="$PROJECT_DIR$/003_BaseLine" />
             <option value="$PROJECT_DIR$/010_multiTextView" />
           </set>
         </option>

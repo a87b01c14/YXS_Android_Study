@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/001_Gravity/001_Gravity.iml" filepath="$PROJECT_DIR$/001_Gravity/001_Gravity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002_Layout_Gravity/002_Layout_Gravity.iml" filepath="$PROJECT_DIR$/002_Layout_Gravity/002_Layout_Gravity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003_BaseLine/003_BaseLine.iml" filepath="$PROJECT_DIR$/003_BaseLine/003_BaseLine.iml" />
       <module fileurl="file://$PROJECT_DIR$/010_multiTextView/010_multiTextView.iml" filepath="$PROJECT_DIR$/010_multiTextView/010_multiTextView.iml" />
       <module fileurl="file://$PROJECT_DIR$/YXS_Android_Study.iml" filepath="$PROJECT_DIR$/YXS_Android_Study.iml" />
     </modules>
