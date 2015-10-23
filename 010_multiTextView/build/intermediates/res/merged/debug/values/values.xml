@@ -326,7 +326,7 @@
     <string name="marquee_default">This use the default marquee animation limit of 3</string>
     <string name="marquee_forever">This will run the marquee animation forever</string>
     <string name="marquee_once">This will run the marquee animation once</string>
-    <string name="multi_textview">001_multiTextView</string>
+    <string name="multi_textview">010_multiTextView</string>
     <string name="picture_around_text">Picture Around</string>
     <string name="shadow_text">Shadow Text</string>
     <!-- From: file:/Applications/android/AndroidStudioProjects/YXS_Android_Study/010_multiTextView/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->

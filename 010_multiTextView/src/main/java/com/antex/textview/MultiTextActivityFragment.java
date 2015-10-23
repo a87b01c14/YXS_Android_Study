@@ -22,7 +22,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.antex.R;
 
 /**
  * TextView 高级应用
