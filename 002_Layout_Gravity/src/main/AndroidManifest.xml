@@ -1,4 +1,4 @@
-<manifest package="com.antex"
+<manifest package="com.antex.layout_gravity"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -8,7 +8,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".layout_gravity.LayoutGravityActivity"
+            android:name=".LayoutGravityActivity"
             android:screenOrientation="landscape"
             android:icon="@mipmap/yxs"
             android:label="@string/title_activity_Layout_Gravity"
