@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.antex.GravityActivity">
+    tools:context="com.antex.gravity.GravityActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
               xmlns:tools="http://schemas.android.com/tools"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:id="@+id/fragment"
-              android:name="com.antex.GravityActivityFragment"
+              android:name="com.antex.gravity.GravityActivityFragment"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               app:layout_behavior="@string/appbar_scrolling_view_behavior"

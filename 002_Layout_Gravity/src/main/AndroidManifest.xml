@@ -8,7 +8,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LayoutGravityActivity"
+            android:name=".layout_gravity.LayoutGravityActivity"
             android:screenOrientation="landscape"
             android:icon="@mipmap/yxs"
             android:label="@string/title_activity_Layout_Gravity"
