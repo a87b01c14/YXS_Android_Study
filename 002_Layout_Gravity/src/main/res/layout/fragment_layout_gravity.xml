@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+            <!-- 靠上对齐 将对象推至其所在容器的顶端而不改变其尺寸-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="top"/>
+            <!-- 靠下对齐-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="bottom"/>
+            <!-- 垂直居中-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="cen_ver"/>
+            <!-- 有需要时将沿垂直方向填满容器-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="fill_ver"
+                />
+
+            <!--clip_vertical 垂直方向裁剪 当对象边缘超出容器的时候，将上下边缘超出的部分剪切掉，剪切基于纵向对齐设置：
+            默认剪切底部
+            注意此属性要在父容器中设置,并且子视图高度比父视图高度高-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="top|clip_vertical"
+                >
+                <!-- 剪切底部-->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="top|clip_ver"/>
+            </LinearLayout>
+
+            <!--注意，不同于在gravity中属性，这里bottom只是表明控件位于底部，clip_horizontal 仍然是默认剪切底部
+            如果需要剪切上部，则添加属性android:gravity="bottom|clip_vertical"-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|clip_vertical"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="bot|clip_ver"/>
+            </LinearLayout>
+            <!--剪切上部-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|clip_vertical"
+                android:gravity="bottom|clip_vertical"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="bot|clip_ver"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f00"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 默认值 控件左对齐，文字居中对齐-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                />
+
+
+            <!-- 靠右对齐-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text=" مرحبا right"/>
+
+            <!-- 靠左对齐-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text=" مرحبا left"/>
+
+            <!-- 基于阅读顺序的开始位置对齐
+            如果时从左到右的语言文字(中英文)，那么start就等同于left
+            如果时从右到左的语言文字(阿拉伯语)，那么start就等同于right
+            可在布局预览界面 选择preview Right-To-Left 产看效果
+            -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="مرحباstart"/>
+
+            <!-- 基于阅读顺序的结束位置对齐
+           如果时从左到右的语言文字(中英文)，那么end就等同于right
+           如果时从右到左的语言文字(阿拉伯语)，那么end就等同于left
+           可在布局预览界面 选择preview Right-To-Left 产看效果
+           -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="مرحباend"/>
+
+
+            <!-- 水平居中-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="center_horizontal"/>
+
+            <!-- 垂直加水平方向居中 效果等同于center_vertical|center_horizontal-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="center"/>
+
+
+            <!-- 有需要时将沿水平方向填满容器-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:text="fill_horizontal"/>
+
+            <!-- 有需要时将沿水平方向和垂直方向填满容器-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:text="fill"/>
+
+
+            <!--clip_horizontal 水平方向裁剪 当对象边缘超出容器的时候，将左右边缘超出的部分剪切掉，剪切基于横向对齐设置：
+            默认剪切右部
+            注意此属性要在父容器中设置,并且子视图宽度比父视图宽度大-->
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|clip_horizontal"
+                >
+                <!--剪切右部-->
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="left|clip_horizontal"/>
+            </LinearLayout>
+
+
+            <!--注意，不同于在gravity中，这里right只是表明控件位于右部，clip_horizontal 仍然是默认剪切右部
+            如果需要剪切右部，则添加属性android:gravity="right|clip_horizontal"-->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|clip_horizontal"
+                >
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:text="right|clip_horizontal"/>
+            </LinearLayout>
+            <!--剪切右部-->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|clip_horizontal"
+                android:gravity="right|clip_horizontal"
+                >
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:text="right|clip_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
