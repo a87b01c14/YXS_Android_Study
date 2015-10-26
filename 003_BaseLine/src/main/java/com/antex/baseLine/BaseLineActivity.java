@@ -50,7 +50,7 @@ public class BaseLineActivity extends AppCompatActivity {
             toggleButton1.setChecked(b1);
             toggleButton2.setChecked(b2);
 
-            //setBaselineAligned(boolean) 是否允许用户调整它内容的基线。 true 按基线对齐,false不对齐
+            //setBaselineAligned(boolean) 是否允许用户调整它内容的基线。 true 允许按基线对齐,false不对齐
             //只有带文本内容的控件才有基线，如TextView/Button/EditText
             linearLayout1.setBaselineAligned(b1);
 

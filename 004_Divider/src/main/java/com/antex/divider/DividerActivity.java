@@ -38,10 +38,11 @@ public class DividerActivity extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                linearLayout.setShowDividers(dividers[checkedId-1]);
+                linearLayout.setShowDividers(dividers[checkedId - 1]);
 
             }
         });
+
     }
 
     @Override

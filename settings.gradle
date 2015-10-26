@@ -1,1 +1,1 @@
-include ':010_multiTextView', ':001_Gravity', ':002_Layout_Gravity', ':003_BaseLine'
+include ':010_multiTextView', ':001_Gravity', ':002_Layout_Gravity', ':003_BaseLine', ':004_Divider', ':005_Weight'

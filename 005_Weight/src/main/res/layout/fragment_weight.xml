@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/linearlayout"
+              android:tag="linearLayout_parent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".WeightActivityFragment"
+              tools:showIn="@layout/activity_weight"
+              >
+    <!--android:measureWithLargestChild作用 : 该属性为true的时候, 所有带权重的子元素都会具有最大子元素的最小尺寸;
+        且只有当父view布局方向上的宽度或高度为wrap_content才有效-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="linearLayout_measureWithLargestChild_true1"/>
+
+    <!-- 如果layout_width=“match_parent 则measureWithLargestChild不起作用”-->
+    <!-- measureWithLargestChild=true 并且子视图总测量宽度>屏幕实际宽度(480x800分辨率)-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="true"
+        android:tag="linearLayout_measureWithLargestChild_true1"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button123456789"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="A1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text="A2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no0"
+            />
+
+
+    </LinearLayout>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="linearLayout_measureWithLargestChild_true2"/>
+
+    <!-- measureWithLargestChild=true 子视图总测量宽度<屏幕实际宽度(480x800分辨率)-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="true"
+        android:tag="linearLayout_measureWithLargestChild_true2"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button1234"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="w1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text="w2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no1"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_margin"
+        android:background="#f00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="measureWithLargestChild=false"/>
+    <!-- measureWithLargestChild=false-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="false"
+        android:tag="linearLayout_measureWithLargestChild_false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button123456789"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="w3"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text="w4"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no2"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_margin"
+        android:background="#f00"/>
+
+    <!-- weight使用-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="linearLayout3"
+        >
+        <Button  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Button1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Button2"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button3"
+            android:layout_weight="1.0"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text="Button4"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_margin"
+        android:background="#f00"/>
+
+    <!-- weight配合weightSum使用-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="linearLayout4"
+        android:gravity="center"
+        android:weightSum="1.0">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="1/2 width"
+            />
+
+    </LinearLayout>
+
+    <com.antex.weight.LogTextBox
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box"
+        android:scrollbars="vertical"
+        android:textColor="#f0f"/>
+</LinearLayout>

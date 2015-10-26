@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/001_Gravity" />
             <option value="$PROJECT_DIR$/002_Layout_Gravity" />
             <option value="$PROJECT_DIR$/003_BaseLine" />
+            <option value="$PROJECT_DIR$/004_Divider" />
+            <option value="$PROJECT_DIR$/005_Weight" />
             <option value="$PROJECT_DIR$/010_multiTextView" />
           </set>
         </option>
