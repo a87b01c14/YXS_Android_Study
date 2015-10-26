@@ -11,7 +11,7 @@
             android:name=".LayoutGravityActivity"
             android:screenOrientation="landscape"
             android:icon="@mipmap/yxs"
-            android:label="@string/title_activity_Layout_Gravity"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

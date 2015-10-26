@@ -2440,9 +2440,8 @@ containing a value of this type.
         public static final int marquee_default=0x7f06001e;
         public static final int marquee_forever=0x7f06001f;
         public static final int marquee_once=0x7f060020;
-        public static final int multi_textview=0x7f060021;
-        public static final int picture_around_text=0x7f060022;
-        public static final int shadow_text=0x7f060023;
+        public static final int picture_around_text=0x7f060021;
+        public static final int shadow_text=0x7f060022;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">YXS_Android_Study</string>
-    <string name="multi_textview">010_multiTextView</string>
+    <string name="app_name">010_multiTextView</string>
     <string name="action_settings">Settings</string>
 
     <string name="marquee_default">This use the default marquee animation limit of 3</string>

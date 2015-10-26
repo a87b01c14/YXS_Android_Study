@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/003_BaseLine/003_BaseLine.iml" filepath="$PROJECT_DIR$/003_BaseLine/003_BaseLine.iml" />
       <module fileurl="file://$PROJECT_DIR$/004_Divider/004_Divider.iml" filepath="$PROJECT_DIR$/004_Divider/004_Divider.iml" />
       <module fileurl="file://$PROJECT_DIR$/005_Weight/005_Weight.iml" filepath="$PROJECT_DIR$/005_Weight/005_Weight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/006_LinearLayout_LayoutParams/006_LinearLayout_LayoutParams.iml" filepath="$PROJECT_DIR$/006_LinearLayout_LayoutParams/006_LinearLayout_LayoutParams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/007_LinearLayout_Calculator/007_LinearLayout_Calculator.iml" filepath="$PROJECT_DIR$/007_LinearLayout_Calculator/007_LinearLayout_Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/010_multiTextView/010_multiTextView.iml" filepath="$PROJECT_DIR$/010_multiTextView/010_multiTextView.iml" />
       <module fileurl="file://$PROJECT_DIR$/YXS_Android_Study.iml" filepath="$PROJECT_DIR$/YXS_Android_Study.iml" />
     </modules>
