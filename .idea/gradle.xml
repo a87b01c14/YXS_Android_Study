@@ -17,6 +17,8 @@
             <option value="$PROJECT_DIR$/005_Weight" />
             <option value="$PROJECT_DIR$/006_LinearLayout_LayoutParams" />
             <option value="$PROJECT_DIR$/007_LinearLayout_Calculator" />
+            <option value="$PROJECT_DIR$/008_MyFrameLayout" />
+            <option value="$PROJECT_DIR$/009_RelativeLayout_Calculator" />
             <option value="$PROJECT_DIR$/010_multiTextView" />
           </set>
         </option>
