@@ -1,5 +1,6 @@
 package com.antex.framelayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,5 +49,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void click(View view){
+        if(((Button)view).getText().equals(getText(R.string.Dynamic_FrameLayout)))
+        {
+            startActivity(new Intent(this,DynamicFrameLayoutActivity.class));
+        }
+        else if(((Button)view).getText().equals(getText(R.string.Static_FrameLayout)))
+        {
+            startActivity(new Intent(this, FrameLayoutActivity.class));
+
+        }
     }
 }
