@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
@@ -78,6 +78,21 @@
 
         </RelativeLayout>
     </RelativeLayout>
+
+<!--会报错“@id/strut is not a sibling in the same RelativeLayout”
+    要和参照物在同一个RelativeLayout之中-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl4"-->
+        <!--android:layout_below="@id/rl1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignRight="@id/strut"-->
+            <!--android:text="Button"/>-->
+
+    <!--</RelativeLayout>-->
 
 
 </RelativeLayout>

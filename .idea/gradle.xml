@@ -19,7 +19,9 @@
             <option value="$PROJECT_DIR$/007_LinearLayout_Calculator" />
             <option value="$PROJECT_DIR$/008_MyFrameLayout" />
             <option value="$PROJECT_DIR$/009_RelativeLayout_Calculator" />
+            <option value="$PROJECT_DIR$/010_Tablelayout_Calculator" />
             <option value="$PROJECT_DIR$/010_multiTextView" />
+            <option value="$PROJECT_DIR$/011_GridLayout_Calculator" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -11,7 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/007_LinearLayout_Calculator/007_LinearLayout_Calculator.iml" filepath="$PROJECT_DIR$/007_LinearLayout_Calculator/007_LinearLayout_Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/008_MyFrameLayout/008_MyFrameLayout.iml" filepath="$PROJECT_DIR$/008_MyFrameLayout/008_MyFrameLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/009_RelativeLayout_Calculator/009_RelativeLayout_Calculator.iml" filepath="$PROJECT_DIR$/009_RelativeLayout_Calculator/009_RelativeLayout_Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/010_Tablelayout_Calculator/010_Tablelayout_Calculator.iml" filepath="$PROJECT_DIR$/010_Tablelayout_Calculator/010_Tablelayout_Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/010_multiTextView/010_multiTextView.iml" filepath="$PROJECT_DIR$/010_multiTextView/010_multiTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/011_GridLayout_Calculator/011_GridLayout_Calculator.iml" filepath="$PROJECT_DIR$/011_GridLayout_Calculator/011_GridLayout_Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/YXS_Android_Study.iml" filepath="$PROJECT_DIR$/YXS_Android_Study.iml" />
     </modules>
   </component>
