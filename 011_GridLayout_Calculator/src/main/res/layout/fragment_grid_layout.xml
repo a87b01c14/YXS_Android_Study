@@ -1,0 +1,118 @@
+<!--GridLayout布局 设置为4列,布局方向为横向-->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".GridLayoutActivityFragment"
+            tools:showIn="@layout/activity_grid_layout">
+
+    <!-- 自定义LogTextBox 占据4列宽度-->
+    <com.antex.gridlayout_calculator.LogTextBox
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_columnSpan="4"
+        android:background="@drawable/box"
+        android:scrollbars="vertical"
+        />
+    <Button
+        android:layout_columnWeight="1"
+        android:text="AC"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="+/-"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="%"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="←"/>
+
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="7"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="8"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="9"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="÷"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="4"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="5"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="6"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="×"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="1"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="2"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="3"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="－"/>
+
+    <!-- 占用2列,用“android:layout_gravity="fill"”必要的时候增加对象的横纵向大小，使其完全充满其容器.
+        用android:layout_columnWeight="1" 也可达到同样效果-->
+    <Button
+        android:layout_gravity="fill"
+        android:layout_columnSpan="2"
+        android:text="0"/>
+
+    <Button
+        android:layout_columnWeight="1"
+        android:text="."/>
+
+    <!-- 占用2行-->
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="2"
+        android:text="+"/>
+    <!-- 用layout_rowWeight属性也可以达到上述效果-->
+    <!--<Button
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_rowSpan="2"
+        android:text="+"/>
+        -->
+    <!-- 占用3列  用android:layout_columnWeight="1" 也可达到同样效果-->
+    <Button
+        android:layout_gravity="fill"
+        android:layout_columnSpan="3"
+        android:text="="/>
+
+</GridLayout>
