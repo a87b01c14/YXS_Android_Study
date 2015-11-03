@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">015_ImageView</string>
+    <string name="action_settings">Settings</string>
+    <string name="normal">normal 100x100</string>
+    <string name="background_src_jpg">background_src_jpg</string>
+    <string name="background_src_png">background_src_png</string>
+    <string name="max_70_70_false">adjustViewBounds_false_max70x70</string>
+    <string name="max_70_70_true">true_max70x70</string>
+    <string name="exactly_70_70">exactly70x70</string>
+    <string name="center">center</string>
+    <string name="centerCrop">centerCrop</string>
+    <string name="centerInside">centerInside</string>
+    <string name="fitCenter">fitCenter</string>
+    <string name="fitStart">fitStart</string>
+    <string name="fitEnd">fitEnd</string>
+    <string name="fitXY">fitXY</string>
+    <string name="matrix">matrix</string>
+    <string name="baseline">baseline</string>
+    <string name="baselineAlignBottom">baselineAlignBottom</string>
+    <string name="baseline_AlignBottom"><![CDATA[baseline&AlignBottom]]></string>
+    <string name="cropToPadding">cropToPadding_LEFT_RIGHT_TOP_BOTTOM</string>
+    <string name="tint">tint</string>
+</resources>

@@ -1,0 +1,569 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".ImageViewActivityFragment"
+                tools:showIn="@layout/activity_image_view">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- about baseline begin-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#faf"
+                android:baselineAligned="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/baseline"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baseline="30dp"
+                    android:src="@mipmap/bomei"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#f0f"
+                android:baselineAligned="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/baselineAlignBottom"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAlignBottom="true"
+                    android:src="@mipmap/bomei"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#0af"
+                android:baselineAligned="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/baseline_AlignBottom"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baseline="30dp"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAlignBottom="true"
+                    android:src="@mipmap/bomei"/>
+
+            </LinearLayout>
+            <!-- about baseline end-->
+
+            <!-- about cropToPadding begin-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cropToPadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0ff">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#f00"
+                    android:cropToPadding="true"
+                    android:paddingLeft="10dp"
+                    android:scrollX="20dp"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:cropToPadding="true"
+                    android:paddingRight="10dp"
+                    android:scrollX="-20dp"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:cropToPadding="true"
+                    android:paddingTop="10dp"
+                    android:scrollY="20dp"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:cropToPadding="true"
+                    android:paddingBottom="10dp"
+                    android:scrollY="-20dp"
+                    android:src="@mipmap/bomei"/>
+            </LinearLayout>
+            <!-- about cropToPadding end-->
+
+
+            <!-- about background and src begin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/background_src_jpg"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/background_src_png"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <!-- 100x100像素视图放在 mdpi/文件夹下,在MDPI的屏幕上其宽和高就是100x100
+            基准视图,未进行缩放，可用作其它视图的参照-->
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#0f000000"
+                    android:src="@mipmap/bomei"/>
+                <!-- background（背景图片）配合src（前景图片）妙用,形成组合图片，-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/bg"
+                    android:padding="10dp"
+                    android:src="@mipmap/xiaolian"/>
+                <!-- 使用边缘透明PNG前景图片，才能使前景图片边缘不遮盖到背景图片-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/bg"
+                    android:padding="10dp"
+                    android:src="@mipmap/xiaolianp"/>
+            </LinearLayout>
+            <!-- about background and src end-->
+
+            <!-- about maxHeight_maxWidth and android:adjustViewBounds begin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_70_70_false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/max_70_70_true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/exactly_70_70"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- maxHeight和maxWidth使用,默认android:adjustViewBounds="false"-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0f000000"
+                    android:maxHeight="70dp"
+                    android:maxWidth="70dp"
+                    android:src="@mipmap/bomei"/>
+
+                <!-- maxHeight和maxWidth使用,配合android:adjustViewBounds="true"使用才有效-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:adjustViewBounds="true"
+                    android:background="#0f000000"
+                    android:maxHeight="70dp"
+                    android:maxWidth="70dp"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="100dp"
+                    android:adjustViewBounds="true"
+                    android:background="#0f000000"
+                    android:src="@mipmap/bomei"/>
+            </LinearLayout>
+            <!-- about maxHeight_maxWidth and android:adjustViewBounds end-->
+
+            <!-- ImageView.ScaleType begin-->
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/centerInside"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitCenter"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="center"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/bomei"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitStart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitEnd"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/matrix"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitStart"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="matrix"
+                    android:src="@mipmap/bomei"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/centerInside"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitCenter"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:background="#f00"
+                    android:scaleType="center"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/bomei"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitStart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitEnd"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/matrix"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitStart"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bomei"/>
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f00"
+                    android:scaleType="matrix"
+                    android:src="@mipmap/bomei"/>
+            </GridLayout>
+            <!-- ImageView.ScaleType end-->
+
+            <!-- about tint begin-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tint"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bomei"
+                android:tint="#0f0"/>
+            <!-- tint end-->
+
+            <!-- about tintMode begin-->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bomei"
+                    android:tint="#0f0"
+                    android:tintMode="multiply"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bomei"
+                    android:tint="#0f0"
+                    android:tintMode="add"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bomei"
+                    android:tint="#0f0"
+                    android:tintMode="screen"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bomei"
+                    android:tint="#0f0"
+                    android:tintMode="src_over"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bomei"
+                    android:tint="#0f0"
+                    android:tintMode="src_atop"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bomei"
+                    android:tint="#0f0"
+                    android:tintMode="src_in"/>
+
+
+            </GridLayout>
+            <!-- tint end-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
