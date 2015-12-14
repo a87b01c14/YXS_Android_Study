@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- reference：参考某一资源ID
+    color：颜色值
+    boolean：布尔值
+    dimension：尺寸值
+    float：浮点值
+    integer：整型值
+    string：字符串
+    fraction：百分数
+    enum：枚举值 多值选一
+    flag：位或运算 多值组合-->
+
+    <declare-styleable name="CustomTextViewStyle">
+        <attr name="description" format="string"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_content" format="string"/>
+        <attr name="padding" format="dimension"/>
+
+        <attr name="float_value" format="float"/>
+        <attr name="integer_value" format="integer"/>
+        <attr name="boolean_value" format="boolean"/>
+        <attr name="fraction_value" format="fraction"/>
+        <attr name="string_value" format="string"/>
+        <attr name="dimension_value" format="dimension"/>
+        <attr name="color_value" format="color"/>
+        <attr name="reference_drawable_value" format="reference"/>
+        <attr name="reference_array_value" format="reference"/>
+        <attr name="enum_value" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="flag_value">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+    </declare-styleable>
+    <attr name="CustomizeStyle" format="reference"/>
+</resources>

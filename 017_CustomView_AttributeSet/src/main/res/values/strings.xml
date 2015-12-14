@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">017_CustomView</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_by_java">I am created by Java Code</string>
+    <string name="from_App_theme">text from AppTheme</string>
+    <string name="from_Activity_theme">text from ActivityTheme</string>
+    <string name="from_Activity_theme_noCustomizeStyle">text from ActivityTheme with noCustomizeStyle </string>
+
+</resources>

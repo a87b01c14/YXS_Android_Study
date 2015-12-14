@@ -1,0 +1,80 @@
+<LinearLayout
+    android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAttr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CustomViewActivityFragment"
+    tools:showIn="@layout/activity_custom_view"
+    >
+    <com.antex.customview.CustomTextView
+        android:id="@+id/textview0"
+        text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myAttr:text_color="@color/colorAccent"
+        myAttr:text_content="text from xml"
+        myAttr:text_size="12sp"
+        style="@style/CustomStyle"/>
+    <com.antex.customview.CustomTextView
+        android:id="@+id/textview1"
+        style="@style/CustomStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <com.antex.customview.CustomTextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myAttr:boolean_value="true"
+        myAttr:color_value="@color/colorAccent"
+        myAttr:description="Show all type Attribute"
+        myAttr:dimension_value="10.5dp"
+        myAttr:enum_value="horizontal"
+        myAttr:flag_value="bold|italic"
+        myAttr:float_value="10.1"
+        myAttr:fraction_value="30%p"
+        myAttr:integer_value="@integer/default_int"
+        myAttr:reference_array_value="@array/String_Array"
+        myAttr:reference_drawable_value="@mipmap/yxs"
+        myAttr:string_value="stringvalue"
+        />
+
+    <com.antex.customview.CustomTextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myAttr:description="default none attr setting"/>
+    <com.antex.customview.CustomTextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myAttr:description="default none attr setting"/>
+    <RadioGroup
+        android:id="@+id/radiaGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="AppTheme.WithCustomizeStyle.Activity.WithValues.withCustomizeStyle"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="AppTheme.WithCustomizeStyle.Activity.WithValues"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="AppTheme.WithCustomizeStyle.Activity.NoValues"/>
+        <RadioButton android:id="@+id/rb4"
+                     android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="AppTheme.NoCustomizeStyle.Activity.NoValuess"/>
+    </RadioGroup>
+
+</LinearLayout>

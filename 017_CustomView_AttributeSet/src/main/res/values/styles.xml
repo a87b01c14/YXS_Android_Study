@@ -1,0 +1,92 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="text_size">8sp</item>
+        <item name="padding">15dp</item>
+        <item name="text_content">@string/from_App_theme</item>
+        <item name="text_color">#f00</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoCustomizeStyle"/>
+    <style name="AppTheme.WithCustomizeStyle">
+    <item name="CustomizeStyle">@style/CustomizeStyleInAppTheme</item>
+</style>
+
+    <style name="AppTheme.NoCustomizeStyle.Activity">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+    <style name="AppTheme.WithCustomizeStyle.Activity">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+    <style name="AppTheme.NoCustomizeStyle.Activity.NoValues"/>
+    <style name="AppTheme.WithCustomizeStyle.Activity.NoValues"/>
+    <style name="AppTheme.NoCustomizeStyle.Activity.WithValues">
+        <item name="text_color">#7ff</item>
+        <item name="text_size">12sp</item>
+        <item name="text_content">@string/from_Activity_theme</item>
+        <item name="padding">15dp</item>
+    </style>
+    <style name="AppTheme.WithCustomizeStyle.Activity.WithValues">
+        <item name="text_color">#f0f</item>
+        <item name="text_size">12sp</item>
+        <item name="text_content">@string/from_Activity_theme</item>
+        <item name="padding">15dp</item>
+    </style>
+    <style name="AppTheme.NoCustomizeStyle.Activity.WithValues.withCustomizeStyle">
+        <item name="CustomizeStyle">@style/CustomizeStyleInActivityTheme</item>
+    </style>
+    <style name="AppTheme.WithCustomizeStyle.Activity.WithValues.withCustomizeStyle">
+        <item name="CustomizeStyle">@style/CustomizeStyleInActivityTheme</item>
+    </style>
+
+    <style name="CustomizeStyleInAppTheme">
+        <item name="text_size">10sp</item>
+        <item name="padding">2dp</item>
+        <item name="text_color">@color/colorPrimaryDark</item>
+        <item name="text_content">text from AppTheme refrence</item>
+    </style>
+
+    <style name="CustomizeStyleInActivityTheme">
+        <item name="text_size">10sp</item>
+        <item name="padding">2dp</item>
+        <item name="text_color">@color/colorPrimaryDark</item>
+        <item name="text_content">text from ActivityTheme refrence</item>
+    </style>
+
+    <style name="CustomStyle">
+        <item name="text_size">12sp</item>
+        <item name="text_color">#0f0</item>
+        <item name="text_content">text form Style</item>
+        <item name="padding">3dp</item>
+    </style>
+
+    <style name="DefaultCustomizeStyle">
+        <item name="text_content">text form DefaultCustomizeStyle</item>
+        <item name="padding">4dp</item>
+        <!--<item name="text_color">#7ff</item>-->
+    </style>
+
+    <style name="DefaultCustomizeStyle_Notext">
+        <item name="padding">4dp</item>
+    </style>
+
+</resources>
