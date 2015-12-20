@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MyView</string>
+    <string name="app_name">019_MyView_onMeasure</string>
     <string name="action_settings">Settings</string>
 </resources>
